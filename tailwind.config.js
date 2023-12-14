@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         'open-sans': 'Open Sans'
+      },
+      animation: {
+        'bounce-slow': 'bounce 4s ease-in-out infinite'
       }
     },
   },
