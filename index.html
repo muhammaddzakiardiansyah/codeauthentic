@@ -14,60 +14,150 @@
   </head>
   <body class="font-open-sans">
     <!-- start navbar -->
-    <nav class="md:flex justify-between items-center px-[6%] py-5">
-      <div>
-        <h1 class="text-3xl font-bold text-secondary cursor-pointer">Code<span class="text-primary">authentic</span></h1>
+    <nav
+      class="lg:flex justify-between items-center px-[6%] py-5 lg:py-0 bg-white z-10"
+    >
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-secondary cursor-pointer">
+          Code<span class="text-primary">authentic</span>
+        </h1>
+        <span
+          ><ion-icon
+            class="lg:hidden text-2xl mt-3 cursor-pointer"
+            onclick="Menu(this)"
+            name="menu"
+          ></ion-icon
+        ></span>
       </div>
-      <ul class="flex justify-between items-center gap-x-10">
-        <li class="font-semibold hover:text-primary cursor-pointer">Home</li>
-        <li class="font-semibold hover:text-primary cursor-pointer">Product</li>
-        <li class="font-semibold hover:text-primary cursor-pointer">Learn</li>
-        <li class="font-semibold hover:text-primary cursor-pointer">Contact</li>
-        <li class="font-semibold hover:text-primary cursor-pointer">Blog's</li>
+      <ul
+        class="lg:flex lg:items-center z-[5] lg:z-auto lg:static absolute bg-white w-full left-0 px-5 mt-5 lg:w-auto lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 pb-5"
+      >
+        <li
+          class="font-semibold hover:text-primary cursor-pointer mb-2 lg:mb-0 lg:px-4"
+        >
+          Home
+        </li>
+        <li
+          class="font-semibold hover:text-primary cursor-pointer mb-2 lg:mb-0 lg:px-4"
+        >
+          Product
+        </li>
+        <li
+          class="font-semibold hover:text-primary cursor-pointer mb-2 lg:mb-0 lg:px-4"
+        >
+          Learn
+        </li>
+        <li
+          class="font-semibold hover:text-primary cursor-pointer mb-2 lg:mb-0 lg:px-4"
+        >
+          Contact
+        </li>
+        <li
+          class="font-semibold hover:text-primary cursor-pointer mb-2 lg:mb-0 lg:px-4"
+        >
+          Blog's
+        </li>
         <li>
-          <button class="bg-for px-5 py-2 rounded-lg text-tree font-semibold text-sm hover:scale-105 hover:bg-[#0A2B64]">Sign In</button>
-          <button class="border border-for px-5 py-2 rounded-lg text-primary font-semibold text-sm hover:scale-105 hover:bg-slate-100">Sign Up</button>
+          <button
+            class="bg-for px-5 py-2 rounded-lg text-tree font-semibold text-sm hover:scale-105 hover:bg-[#0A2B64]"
+          >
+            Sign In
+          </button>
+          <button
+            class="border border-for px-5 py-2 rounded-lg text-primary font-semibold text-sm hover:scale-105 hover:bg-slate-100"
+          >
+            Sign Up
+          </button>
         </li>
       </ul>
     </nav>
     <!-- end navbar -->
     <!-- start header -->
-    <div class="h-[89vh] bg-primary flex justify-around items-center">
+    <div class="h-auto bg-primary lg:flex justify-around items-center">
       <div>
-        <h2 class="text-4xl font-extrabold leading-normal text-secondary"><span class="text-tree">Codeauthentic</span><br/> harapan kamu untuk<br/>mewujudkan <span class="text-tree">usaha</span><br/> yang kamu inginkan<br/>di bidang <span class="text-tree">teknologi digital.</span></h2>
-        <p class="text-secondary mt-4 font-semibold">Kami siap sepenuhnya membantu anda dalam<br/> belajar/membuat atau mengembangkan<br/> usaha di bidang teknologi informasi.</p>
-        <button class="bg-for px-5 py-2 rounded-lg mt-5 font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105">Mulai Sekarang !</button>
+        <h2 class="text-xl md:text-3xl lg:text-4xl text-center lg:text-left pt-6 font-extrabold leading-normal text-secondary">
+          <span class="text-tree">Codeauthentic</span><br />
+          harapan kamu untuk<br />mewujudkan <span class="text-tree">usaha</span
+          ><br />
+          yang kamu inginkan<br />di bidang
+          <span class="text-tree">teknologi digital.</span>
+        </h2>
+        <p class="text-secondary text-sm lg:text-base mt-4 font-semibold text-center lg:text-left">
+          Kami siap sepenuhnya membantu anda dalam<br />
+          belajar/membuat atau mengembangkan<br />
+          usaha di bidang teknologi informasi.
+        </p>
+        <button
+          class="bg-for block mx-auto lg:inline-block lg:mx-0 px-3 lg:px-5 py-2 rounded-lg mt-5 font-medium lg:font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105"
+        >
+          Mulai Sekarang !
+        </button>
       </div>
-        <img src="public/img/programmer.png" alt="programmer" class="h-[390px] rounded-2xl">
+      <img
+        src="public/img/programmer.png"
+        alt="programmer"
+        class="h-[200px] sm:h-[250px] md:h-[350px] md:mt-5 mx-auto lg:h-[390px] rounded-2xl"
+      />
     </div>
     <!-- end header -->
     <!-- start main -->
     <div class="h-screen">
-      <h2 class="pt-14 font-bold text-secondary text-3xl text-center">Apa yang kamu <span class="text-primary">butuhkan ?</span></h2>
-      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">Kami menyediakan</h4>
+      <h2 class="pt-14 font-bold text-secondary text-3xl text-center">
+        Apa yang kamu <span class="text-primary">butuhkan ?</span>
+      </h2>
+      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">
+        Kami menyediakan
+      </h4>
       <div class="w-[80%] mx-auto grid grid-cols-3 gap-5 mt-7">
         <div class="border border-slate-400 p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 rounded-lg p-3">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
         <div class="border border-slate-400 p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 rounded-lg p-3">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
         <div class="border border-slate-400 p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 rounded-lg p-3">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
       </div>
@@ -75,101 +165,205 @@
     <!-- end main -->
     <!-- start learn -->
     <div class="h-screen bg-primary">
-      <h2 class="pt-10 font-bold text-secondary text-3xl text-center">Ingin <span class="text-tree">belajar  bersama</span> kami ?</h2>
-      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">Ikuti kelas kami</h4>
+      <h2 class="pt-10 font-bold text-secondary text-3xl text-center">
+        Ingin <span class="text-tree">belajar bersama</span> kami ?
+      </h2>
+      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">
+        Ikuti kelas kami
+      </h4>
       <div class="w-[80vw] mx-auto mt-7 grid grid-cols-4 gap-3">
         <div class="bg-tree p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 p-3 rounded-lg">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
         <div class="bg-tree p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 p-3 rounded-lg">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
         <div class="bg-tree p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 p-3 rounded-lg">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
         <div class="bg-tree p-3 rounded-lg hover:scale-105">
-          <img src="public/img/programmer.png" alt="" class="h-52 w-full">
+          <img src="public/img/programmer.png" alt="" class="h-52 w-full" />
           <div class="mt-3 bg-slate-200 p-3 rounded-lg">
-            <h3 class="font-semibold text-secondary mb-3">Kartu Undangan Online</h3>
-            <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa.</p>
-            <button class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4">Lihat Sempel</button>
+            <h3 class="font-semibold text-secondary mb-3">
+              Kartu Undangan Online
+            </h3>
+            <p class="text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laudantium ipsa.
+            </p>
+            <button
+              class="bg-for px-4 py-2 rounded-lg text-xs font-semibold hover:bg-[#0A2B64] hover:scale-105 text-tree mt-4"
+            >
+              Lihat Sempel
+            </button>
           </div>
         </div>
       </div>
-      <button class="flex items-center gap-x-2 mt-6 mx-auto font-semibold text-secondary bg-slate-50 px-4 py-2 rounded-lg hover:scale-105 hover:bg-slate-400">Lihat lain nya <img src="public/img/arrow-right-solid.svg" alt="" class="mt-1"></button>
+      <button
+        class="flex items-center gap-x-2 mt-6 mx-auto font-semibold text-secondary bg-slate-50 px-4 py-2 rounded-lg hover:scale-105 hover:bg-slate-400"
+      >
+        Lihat lain nya
+        <img src="public/img/arrow-right-solid.svg" alt="" class="mt-1" />
+      </button>
     </div>
     <!-- end learn -->
     <!-- start promo -->
     <div class="h-[50vh] flex justify-center items-center gap-x-10">
       <div>
-        <h2 class="font-bold text-secondary text-3xl leading-normal">Ingin buat website<br/> dengan fitur custom ?</h2>
-        <p class="text-secondary mt-3">Gratis konsultasi, Konsultasikan sekarang !</p>
+        <h2 class="font-bold text-secondary text-3xl leading-normal">
+          Ingin buat website<br />
+          dengan fitur custom ?
+        </h2>
+        <p class="text-secondary mt-3">
+          Gratis konsultasi, Konsultasikan sekarang !
+        </p>
       </div>
-      <button class="bg-for px-6 py-3 rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 animate-bounce-slow">Konsultasi</button>
+      <button
+        class="bg-for px-6 py-3 rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 animate-bounce-slow"
+      >
+        Konsultasi
+      </button>
     </div>
     <!-- end promo -->
     <!-- me start -->
     <div class="h-auto bg-primary pb-16">
-      <h2 class="pt-10 font-bold text-secondary text-3xl text-center">Kenapa harus memilih <span class="text-tree">jasa kami ?</span></h2>
-      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">Karena kami</h4>
+      <h2 class="pt-10 font-bold text-secondary text-3xl text-center">
+        Kenapa harus memilih <span class="text-tree">jasa kami ?</span>
+      </h2>
+      <h4 class="mt-5 font-semibold text-xl text-center text-secondary">
+        Karena kami
+      </h4>
       <div class="flex mt-10 px-20 gap-x-10 justify-between items-center">
         <div class="order-last">
-          <img src="public/img/undraw_Fast_re_lywu.png" alt="fast" class="h-[380px] rounded-3xl">
+          <img
+            src="public/img/undraw_Fast_re_lywu.png"
+            alt="fast"
+            class="h-[380px] rounded-3xl"
+          />
         </div>
         <div class="order-first">
-          <h1 class="font-bold text-3xl mb-5 text-secondary"><span class="text-tree">Cepat</span> dan <span class="text-tree">Mudah</span></h1>
-          <p class="font-semibold text-secondary">Kami selalu mengusahakan pengerjaan project clien kami dengan sesegera mungkin agar dapat selesai sebelum jatuh deadline.</p>
+          <h1 class="font-bold text-3xl mb-5 text-secondary">
+            <span class="text-tree">Cepat</span> dan
+            <span class="text-tree">Mudah</span>
+          </h1>
+          <p class="font-semibold text-secondary">
+            Kami selalu mengusahakan pengerjaan project clien kami dengan
+            sesegera mungkin agar dapat selesai sebelum jatuh deadline.
+          </p>
         </div>
       </div>
       <div class="flex mt-10 px-20 gap-x-10 justify-between items-center">
         <div class="order-first">
-          <img src="public/img/undraw_environment_iaus.svg" alt="fast" class="h-[380px] rounded-3xl">
+          <img
+            src="public/img/undraw_environment_iaus.svg"
+            alt="fast"
+            class="h-[380px] rounded-3xl"
+          />
         </div>
         <div class="order-last">
-          <h1 class="font-bold text-3xl mb-5 text-secondary">Aman dan <span class="text-tree">Nyaman</span></h1>
-          <p class="font-semibold text-secondary">Kami selalu memberikan design yang nyaman dan ramah terhadap clien yang akan menggunakannya.</p>
+          <h1 class="font-bold text-3xl mb-5 text-secondary">
+            Aman dan <span class="text-tree">Nyaman</span>
+          </h1>
+          <p class="font-semibold text-secondary">
+            Kami selalu memberikan design yang nyaman dan ramah terhadap clien
+            yang akan menggunakannya.
+          </p>
         </div>
       </div>
       <div class="flex mt-10 px-20 gap-x-10 justify-between items-center">
         <div class="order-last">
-          <img src="public/img/undraw_finance_re_gnv2.svg" alt="fast" class="h-[380px] rounded-3xl">
+          <img
+            src="public/img/undraw_finance_re_gnv2.svg"
+            alt="fast"
+            class="h-[380px] rounded-3xl"
+          />
         </div>
         <div class="order-first">
-          <h1 class="font-bold text-3xl mb-5 text-secondary"><span class="text-tree">Sangat</span> Hemat</h1>
-          <p class="font-semibold text-secondary">kami mencoba memberikan produk yang terbaik, namun dengan harga yang seminimal mungkin.</p>
+          <h1 class="font-bold text-3xl mb-5 text-secondary">
+            <span class="text-tree">Sangat</span> Hemat
+          </h1>
+          <p class="font-semibold text-secondary">
+            kami mencoba memberikan produk yang terbaik, namun dengan harga yang
+            seminimal mungkin.
+          </p>
         </div>
       </div>
       <div class="flex mt-10 px-20 gap-x-10 justify-between items-center">
         <div class="order-first">
-          <img src="public/img/undraw_javascript_frameworks_-8-qpc.svg" alt="fast" class="h-[380px] rounded-3xl">
+          <img
+            src="public/img/undraw_javascript_frameworks_-8-qpc.svg"
+            alt="fast"
+            class="h-[380px] rounded-3xl"
+          />
         </div>
         <div class="order-last">
-          <h1 class="font-bold text-3xl mb-5 text-secondary">Teknologi <span class="text-tree">Terbaru</span></h1>
-          <p class="font-semibold text-secondary">Produk yang kami sediakan sudah menggunakan teknologi yang terbaru dan sesuai dengan standar industri.</p>
+          <h1 class="font-bold text-3xl mb-5 text-secondary">
+            Teknologi <span class="text-tree">Terbaru</span>
+          </h1>
+          <p class="font-semibold text-secondary">
+            Produk yang kami sediakan sudah menggunakan teknologi yang terbaru
+            dan sesuai dengan standar industri.
+          </p>
         </div>
       </div>
       <div class="flex mt-10 px-20 gap-x-10 justify-between items-center">
         <div class="order-last">
-          <img src="public/img/undraw_real_time_sync_re_nky7.svg" alt="fast" class="h-[380px] rounded-3xl">
+          <img
+            src="public/img/undraw_real_time_sync_re_nky7.svg"
+            alt="fast"
+            class="h-[380px] rounded-3xl"
+          />
         </div>
         <div class="order-first">
-          <h1 class="font-bold text-3xl mb-5 text-secondary"><span class="text-tree">Responsif</span> Design</h1>
-          <p class="font-semibold text-secondary">Dengan 1 produk, clien kami dapat menikmatinya diberbagai device entah itu Komputer, Handphone atau tablet.</p>
+          <h1 class="font-bold text-3xl mb-5 text-secondary">
+            <span class="text-tree">Responsif</span> Design
+          </h1>
+          <p class="font-semibold text-secondary">
+            Dengan 1 produk, clien kami dapat menikmatinya diberbagai device
+            entah itu Komputer, Handphone atau tablet.
+          </p>
         </div>
       </div>
     </div>
@@ -177,65 +371,155 @@
     <!-- teknologi star -->
     <div class="h-screen relative">
       <span>
-        <img src="public/img/pngwing.com.png" alt="javascript" class="h-16 absolute top-20 left-80 animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com.png"
+          alt="javascript"
+          class="h-16 absolute top-20 left-80 animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (1).png" alt="javascript" class="h-16 absolute top-40 left-56 animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (1).png"
+          alt="javascript"
+          class="h-16 absolute top-40 left-56 animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (2).png" alt="javascript" class="h-16 absolute top-[13%] left-[34%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (2).png"
+          alt="javascript"
+          class="h-16 absolute top-[13%] left-[34%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (3).png" alt="javascript" class="h-16 absolute top-[53%] left-[17%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (3).png"
+          alt="javascript"
+          class="h-16 absolute top-[53%] left-[17%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (4).png" alt="javascript" class="h-16 absolute top-[25%] left-[70%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (4).png"
+          alt="javascript"
+          class="h-16 absolute top-[25%] left-[70%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (5).png" alt="javascript" class="h-16 absolute top-[45%] left-[75%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (5).png"
+          alt="javascript"
+          class="h-16 absolute top-[45%] left-[75%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (6).png" alt="javascript" class="h-16 absolute top-[15%] left-[80%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (6).png"
+          alt="javascript"
+          class="h-16 absolute top-[15%] left-[80%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (7).png" alt="javascript" class="h-16 absolute top-[80%] left-[23%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (7).png"
+          alt="javascript"
+          class="h-16 absolute top-[80%] left-[23%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (8).png" alt="javascript" class="h-16 absolute top-[20%] left-[48%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (8).png"
+          alt="javascript"
+          class="h-16 absolute top-[20%] left-[48%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (9).png" alt="javascript" class="h-16 absolute top-[38%] left-[26%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (9).png"
+          alt="javascript"
+          class="h-16 absolute top-[38%] left-[26%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (10).png" alt="javascript" class="h-16 absolute top-[72%] left-[37%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (10).png"
+          alt="javascript"
+          class="h-16 absolute top-[72%] left-[37%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (11).png" alt="javascript" class="h-16 absolute top-[65%] left-[60%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (11).png"
+          alt="javascript"
+          class="h-16 absolute top-[65%] left-[60%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (12).png" alt="javascript" class="h-16 absolute top-[16%] left-[59%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (12).png"
+          alt="javascript"
+          class="h-16 absolute top-[16%] left-[59%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (13).png" alt="javascript" class="h-16 absolute top-[78%] left-[55%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (13).png"
+          alt="javascript"
+          class="h-16 absolute top-[78%] left-[55%] animate-bounce-slow"
+        />
       </span>
       <span>
-        <img src="public/img/pngwing.com (14).png" alt="javascript" class="h-16 absolute top-[78%] left-[77%] animate-bounce-slow">
+        <img
+          src="public/img/pngwing.com (14).png"
+          alt="javascript"
+          class="h-16 absolute top-[78%] left-[77%] animate-bounce-slow"
+        />
       </span>
-      <h2 class="text-center pt-[20%] text-4xl text-secondary font-bold"><span class="text-primary">Beberapa</span> teknologi<br/> yang kami <span class="text-primary">gunakan</span></h2>
+      <h2 class="text-center pt-[20%] text-4xl text-secondary font-bold">
+        <span class="text-primary">Beberapa</span> teknologi<br />
+        yang kami <span class="text-primary">gunakan</span>
+      </h2>
     </div>
     <!-- teknologi end -->
     <!-- quesen start -->
     <div class="h-screen bg-primary">
-      <h2 class="pt-10 text-3xl text-secondary font-bold text-center">Ingin bertanya lebih lanjut <span class="text-tree">dengan kami ?</span></h2>
+      <h2 class="pt-10 text-3xl text-secondary font-bold text-center">
+        Ingin bertanya lebih lanjut <span class="text-tree">dengan kami ?</span>
+      </h2>
       <div class="mt-5">
-        <p class="text-lg font-semibold text-secondary my-5 text-center">Hubungi kami melalui WhatsApp</p>
-        <button class="bg-for px-6 py-3 rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 block mx-auto">Hubungi Sekarang</button>
+        <p class="text-lg font-semibold text-secondary my-5 text-center">
+          Hubungi kami melalui WhatsApp
+        </p>
+        <button
+          class="bg-for px-6 py-3 rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 block mx-auto"
+        >
+          Hubungi Sekarang
+        </button>
         <p class="text-xl font-bold text-center my-5">Atau</p>
         <div class="bg-slate-200 rounded-2xl w-1/2 mx-auto p-5">
-          <input type="text" class="block w-full px-5 py-2 rounded-lg mb-2" placeholder="Masukan Nama">
-          <input type="text" class="block w-full px-5 py-2 rounded-lg mb-2" placeholder="Masukan Email">
-          <textarea name="" id="" cols="30" rows="6" class="w-full rounded-lg p-5" placeholder="Tulis pesan disini"></textarea>
-          <button class="bg-for px-7 py-2 mt-3 text-sm rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 block mx-auto">Kirim</button>
+          <input
+            type="text"
+            class="block w-full px-5 py-2 rounded-lg mb-2"
+            placeholder="Masukan Nama"
+          />
+          <input
+            type="text"
+            class="block w-full px-5 py-2 rounded-lg mb-2"
+            placeholder="Masukan Email"
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="6"
+            class="w-full rounded-lg p-5"
+            placeholder="Tulis pesan disini"
+          ></textarea>
+          <button
+            class="bg-for px-7 py-2 mt-3 text-sm rounded-lg font-semibold text-tree hover:bg-[#0A2B64] hover:scale-105 block mx-auto"
+          >
+            Kirim
+          </button>
         </div>
       </div>
     </div>
@@ -243,14 +527,20 @@
     <!-- footer start -->
     <div class="h-[60vh] flex justify-center items-center">
       <div>
-        <h2 class="text-3xl text-secondary font-bold text-center">Tunggu apa lagi..<br/>Mari bergabung bersama kami</h2>
-        <p class="mt-3 italic text-secondary text-center">Mulai bangun usaha anda jauh lebih menarik lagi.</p>
+        <h2 class="text-3xl text-secondary font-bold text-center">
+          Tunggu apa lagi..<br />Mari bergabung bersama kami
+        </h2>
+        <p class="mt-3 italic text-secondary text-center">
+          Mulai bangun usaha anda jauh lebih menarik lagi.
+        </p>
       </div>
     </div>
     <div class="h-[60vh] bg-secondary px-20">
       <div class="pt-20 flex justify-between items-center">
         <ul class="flex-1">
-          <h2 class="text-3xl font-semibold mb-5">Code<span class="text-primary">authentic</span></h2>
+          <h2 class="text-3xl font-semibold mb-5">
+            Code<span class="text-primary">authentic</span>
+          </h2>
           <li class="my-2 text-tree text-sm">codeauthentic@gmail.com</li>
           <li class="my-2 text-tree text-sm">facebook.com/codeauthentic</li>
           <li class="my-2 text-tree text-sm">instagram.com/@code_authentic</li>
@@ -262,24 +552,61 @@
           <li class="my-2 text-tree text-sm">Pembuatan Website UMKM</li>
         </ul>
         <ul class="flex-1">
-          <h2 class="mb-7 text-xl font-semibold text-tree">Kelas Pemrogramman</h2>
+          <h2 class="mb-7 text-xl font-semibold text-tree">
+            Kelas Pemrogramman
+          </h2>
           <li class="my-2 text-tree text-sm">Dasar HTML</li>
           <li class="my-2 text-tree text-sm">HTML Lanjutan</li>
           <li class="my-2 text-tree text-sm">CSS Dasar</li>
         </ul>
         <ul class="flex-1">
           <h2 class="mb-7 text-xl font-semibold text-tree">Blog's</h2>
-          <li class="my-2 text-tree text-sm">Mengapa php dibilang akan mati?</li>
+          <li class="my-2 text-tree text-sm">
+            Mengapa php dibilang akan mati?
+          </li>
           <li class="my-2 text-tree text-sm">TERBARU Next js 14 rilis</li>
-          <li class="my-2 text-tree text-sm">Mulai dari mana ketika ingin belajar pemrogramman?</li>
+          <li class="my-2 text-tree text-sm">
+            Mulai dari mana ketika ingin belajar pemrogramman?
+          </li>
         </ul>
       </div>
-      <hr class="mt-28">
+      <hr class="mt-28" />
       <div class="flex items-center justify-between">
-        <p class="text-tree text-xs mt-2"><span class="text-black">Code</span><span class="text-primary">authentic</span> Developer</p>
-        <p class="mt-2 text-tree text-xs">Copyright <span class="text-black">Code</span><span class="text-primary">authentic</span> 2024</p>
+        <p class="text-tree text-xs mt-2">
+          <span class="text-black">Code</span
+          ><span class="text-primary">authentic</span> Developer
+        </p>
+        <p class="mt-2 text-tree text-xs">
+          Copyright <span class="text-black">Code</span
+          ><span class="text-primary">authentic</span> 2024
+        </p>
       </div>
     </div>
     <!-- footer end -->
+
+    <!-- script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function Menu(e) {
+        const list = document.querySelector("ul");
+
+        if (e.name == "menu") {
+          (e.name = "close-outline"),
+            list.classList.add("top-[60px]"),
+            list.classList.add("opacity-100");
+        } else {
+          (e.name = "menu"),
+            list.classList.remove("top-[60px]"),
+            list.classList.remove("opacity-100");
+        }
+      }
+    </script>
   </body>
 </html>
