@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Code Editor</title>
+    <style>
+        #editor {
+            width: 100%;
+            height: 200px;
+        }
+
+        #output {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+
+    <textarea id="editor" placeholder="Type your code here..."></textarea>
+    <button onclick="runCode()">Run Code</button>
+    <div id="output"></div>
+
+    <script>
+        function runCode() {
+            // Get the code from the editor
+            var code = document.getElementById('editor').value;
+
+            // Get the output div
+            var outputDiv = document.getElementById('output');
+
+            try {
+                // Evaluate the code
+                var result = eval(code);
+
+                // Display the result in the output div
+                outputDiv.innerHTML = '<strong>Result:</strong><br>' + result;
+            } catch (error) {
+                // Display any errors in the output div
+                outputDiv.innerHTML = '<strong>Error:</strong><br>' + error.message;
+            }
+        }
+    </script>
+
+</body>
+</html>
